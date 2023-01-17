@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRef, useState } from 'react'
+import { math } from './logic.mjs'
 
 const Calculator = () => {
   const formRef = useRef()
@@ -12,11 +13,9 @@ const Calculator = () => {
 
   const equal = (e) => {
     e.preventDefault()
-    // let result = Function('return' + inputRef.current.value)()
-    // typeof result === 'number' && setResult(result)
-    typeof eval(inputRef.current.value) === 'number' &&
-      setResult(eval(inputRef.current.value))
-    console.log(result)
+    !isNaN(math.evaluate(inputRef.current.value)) &&
+      setResult(math.evaluate(inputRef.current.value))
+    console.log(math.evaluate(inputRef.current.value))
     inputRef.current.value = ' '
   }
   const resetInput = (e) => {
