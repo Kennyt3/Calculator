@@ -9,7 +9,7 @@ const Calculator = () => {
   const [result, setResult] = useState(0)
 
   const num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const symbols = ['+', '-', '*', '/', '(', ')', '%']
+  const symbols = ['+', '-', '*', '/', '(', ')', '%', '^', '~']
 
   const equal = (e) => {
     e.preventDefault()
