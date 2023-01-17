@@ -42,9 +42,7 @@ const Calculator = () => {
   return (
     <div className='mx-auto  w-fit pt-20'>
       <form action='' ref={formRef}>
-        <h1 className='text-3xl text-center font-bold'>
-          Simple Calculator App
-        </h1>
+        <h1 className='text-3xl text-center font-bold'>TMK Calculator</h1>
         <p className='text-xl my-5' ref={resultRef}>
           {result}
         </p>
