@@ -8,8 +8,8 @@ const Calculator = () => {
   const resultRef = useRef(null)
   const [result, setResult] = useState(0)
 
-  const num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-  const symbols = ['+', '-', '*', '/', '(', ')', '%', '^', 0]
+  const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  const symbols = ['+', '-', '*', '/', '(', ')', '%', '^']
 
   const equal = (e) => {
     e.preventDefault()
